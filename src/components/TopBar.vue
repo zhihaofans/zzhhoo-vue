@@ -28,7 +28,6 @@ const menuOptions: MenuOption[] = [
         { default: () => "主页" }
       ),
     key: "go-back-home",
-    icon: renderIcon(HomeIcon),
   },
   {
     label: () =>
@@ -42,7 +41,6 @@ const menuOptions: MenuOption[] = [
         { default: () => "关于" }
       ),
     key: "go-to-about",
-    icon: renderIcon(AboutIcon),
   },
   {
     label: () =>
@@ -50,13 +48,17 @@ const menuOptions: MenuOption[] = [
         RouterLink,
         {
           to: {
-            path: "https://chaoshan.netlify.app/",
+            name: "chaoshan",
           },
         },
         { default: () => "潮汕词典" }
       ),
     key: "go-to-chaoshan",
-    icon: renderIcon(AboutIcon),
   },
 ];
 </script>
+<style scoped>
+.n-card {
+  max-width: 300px;
+}
+</style>
