@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { NConfigProvider, NMessageProvider, zhCN, dateZhCN } from "naive-ui";
+import { dateZhCN, zhCN, NConfigProvider, NMessageProvider } from "naive-ui";
 import { RouterView } from "vue-router";
 import TopBar from "./components/TopBar.vue";
 </script>
