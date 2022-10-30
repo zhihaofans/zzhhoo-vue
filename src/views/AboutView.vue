@@ -1,15 +1,10 @@
 <template>
-  <div class="about">
-    <h1>This is an about page</h1>
-  </div>
+  <n-result status="418" title="我只是个关于页面" description="一切尽在不言中">
+    <template #footer>
+      <a href="/chaoshan"><n-button>打开唯一能用的功能</n-button></a>
+    </template>
+  </n-result>
 </template>
-
-<style>
-@media (min-width: 1024px) {
-  .about {
-    min-height: 100vh;
-    display: flex;
-    align-items: center;
-  }
-}
-</style>
+<script setup lang="ts">
+import { NButton, NResult } from "naive-ui";
+</script>

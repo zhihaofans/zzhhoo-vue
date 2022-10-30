@@ -19,7 +19,7 @@ const router = createRouter({
     {
       path: "/chaoshan",
       name: "chaoshan",
-      component: () => import("../views/ChaoShanDict.vue"),
+      component: () => import("../views/ChaoShanDictView.vue"),
     },
   ],
 });
