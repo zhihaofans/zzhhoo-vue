@@ -3,17 +3,10 @@
 </template>
 
 <script setup lang="ts">
-import { h, ref, type Component } from "vue";
+import { h, ref } from "vue";
 import { RouterLink } from "vue-router";
-import { NIcon, NMenu } from "naive-ui";
+import { NMenu } from "naive-ui";
 import type { MenuOption } from "naive-ui";
-import {
-  HomeOutline as HomeIcon,
-  PersonOutline as AboutIcon,
-} from "@vicons/ionicons5";
-function renderIcon(icon: Component) {
-  return () => h(NIcon, null, { default: () => h(icon) });
-}
 const activeKey = ref<string | null>(null);
 const menuOptions: MenuOption[] = [
   {
